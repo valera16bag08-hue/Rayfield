@@ -1,0 +1,16 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "Frog Evolution Simulator", -- Название меню
+   LoadingTitle = "Загрузка меню...",
+   LoadingSubtitle = "от твоего имени",
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = "FrogGame", -- название папки для сохранения
+      FileName = "MenuConfig"
+   },
+   Discord = {
+      Enabled = false, -- можно включить если хочешь добавить Discord
+   },
+   KeySystem = false -- можно сделать вход по ключу (оставим false)
+})
